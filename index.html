@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn/Testing React</title>
+    
+        <!-- React -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+        <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <script type="text/babel">
+            
+            class App extends React.Component {
+                render() {
+                    return (
+                        <div className="notificationsFrame">
+                            <div className="panel">
+                                <Header />
+                                <Content />
+                            </div>
+                        </div>
+                    )
+                }
+            }
+
+            ReactDOM.render(<App />, document.body);
+    
+
+
+        </script>
+        
+    </body>
+</html>
